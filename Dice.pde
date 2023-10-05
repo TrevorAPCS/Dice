@@ -69,7 +69,7 @@ int numDice = 1;
       if(mouseX >= addDice.x && mouseX <= addDice.x + addDice.sX && mouseY >= addDice.y && mouseY <= addDice.y + addDice.sY && numDice < 100){
          numDice++;
       }
-      if(mouseX >= removeDice.x && mouseX <= removeDice.x + removeDice.sX && mouseY >= removeDice.y && mouseY <= removeDice.y + removeDice.sY && numDice > 0){
+      if(mouseX >= removeDice.x && mouseX <= removeDice.x + removeDice.sX && mouseY >= removeDice.y && mouseY <= removeDice.y + removeDice.sY && numDice > 1){
          numDice--;
       }
       if(mouseX >= add10.x && mouseX <= add10.x + add10.sX && mouseY >= add10.y && mouseY <= add10.y + add10.sY && numDice < 100){
