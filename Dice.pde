@@ -203,14 +203,14 @@ class Button{
   int y;
   int sX;
   int sY;
-  String text;
+  String bText;
   boolean isPressed = false;
   Button(int pX, int pY, int sizeX, int sizeY, String buttonText){
     x = pX;
     y = pY;
     sX = sizeX;
     sY = sizeY;
-    text = buttonText;
+    bText = buttonText;
   }
   void show(){
     if(mouseX >= x && mouseX <= x + sX && mouseY >= y && mouseY <= y + sY){
@@ -223,6 +223,6 @@ class Button{
     fill(0);
     textSize(15);
     textAlign(CENTER);
-    text(text, x + sX/2, y + sY * 5/8);
+    text(bText, x + sX/2, y + sY * 5/8);
   }
 }
